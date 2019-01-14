@@ -1,0 +1,98 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'brand'
+  -
+    var products = [
+                   ['1','Mango  People  T-shirt', '52'],
+                   ['2','Mango  People  T-shirt', '25'],
+                   ['3','Mango  People  T-shirt', '30'],
+                   ['4','Mango  People  T-shirt', '40'],
+                   ['5','Mango  People  T-shirt', '52'],
+                   ['6','Mango  People  T-shirt', '25'],
+                   ['7','Mango  People  T-shirt', '30'],
+                   ['8','Mango  People  T-shirt', '40']
+                   ]
+  -
+    var feature = [
+                   ['car','Free Delivery', 'Worldwide delivery on all. Authorit tively morph next-generation innovtion with extensive models.'],
+                   ['round','Sales & discounts', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'],
+                   ['crown','Quality assurance', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'],
+                   ]
+
+block content
+  section.slider
+    .container
+      .slide
+        +image('man.jpg', 'man_img')
+        .slide_text THE BRAND
+          .slide_text_exp OF LUXERIOUS 
+            span FASHION
+
+  section.category
+    .container.category_container
+      a(href="#" class="category_item men")
+        .badge hOT dEAL
+          .badge_category FOR MEN
+      a(href="#" class="category_item women")
+        .badge 30% offer
+          .badge_category women
+      a(href="#" class="category_item accesories")
+        .badge LUXIROUS & trendy
+          .badge_category ACCESORIES
+      a(href="#" class="category_item kids")
+        .badge new arrivals
+          .badge_category FOR kids
+
+  section.products
+    .container
+      h2.products_title Fetured Items
+      .products_subtitle Shop for items based on what we featured in this week
+      ul.products_items
+        each item in products
+          li.products_item
+            a(href="#" class="products_item_img" style=`background-image:url('/assets/img/products/${item[0]}.png')`)
+            a(href="#" class="products_item_desc") #{item[1]}
+            .products_item_price $#{item[2]}
+            button.button.products_items_button Add to Cart
+
+      button.button.products_button Browse All Product
+        i(class="fa fa-long-arrow-right" aria-hidden="true")
+
+  section.feature
+    .container.feature_container
+      .feature_img
+        +image('feature.jpg','snow_img')
+      .feature_title 30% 
+        span.colortext OFFER
+        .feature_title_category for WOMEN
+      ul.feature_boxes
+        each item in feature
+          li.feature_box
+            .feature_box_img
+              object(type="image/svg+xml" data=`assets/img/${item[0]}.svg` width="51")
+            .feature_box_desc
+              .box_desc_title #{item[1]}
+              .box_desc_content #{item[2]}
+
+  section.reviews
+    .container.reviews_container
+      .reviews_comment
+        .comment_img
+          +image('customer.png','customer')
+        .comment_content
+          .comment_content_text “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+          .comment_content_signature 
+            .signature_author Bin Burhan
+            .signature_from Dhaka, Bd
+      .reviews_btns
+        .reviews_btn
+        .reviews_btn.reviews_btn_active
+        .reviews_btn
+      .reviews_subscribe
+        .subscribe_title Subscribe
+        .subscribe_subtitle FOR OUR NEWLETTER AND PROMOTION
+        form.subscribe_form(action="#")
+          input(type="email" class="subscribe_input" name="email" placeholder="Enter Your Email")
+          button(type="submit" class="subscribe_button") Subscribe
+

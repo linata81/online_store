@@ -1,0 +1,30 @@
+.slider {
+  background: #e8e8e8;
+  height: 615px;
+  overflow: hidden;
+}
+.slide {
+  position: relative;
+}
+.man_img {
+  width: 100%;
+}
+.slide_text {
+  position: absolute;
+  top: 224px;
+  left: 0;
+  border-left: 12px solid $red;
+  font-family: "lato-black";
+  font-size: 60px;
+  line-height: 0.68;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.slide_text_exp {
+  font-size: 40px;
+  line-height: .8;
+  margin-top: 20px;
+  span {
+    color: $red;
+  }
+}

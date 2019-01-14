@@ -1,0 +1,35 @@
+header.header
+  .header_top
+    .container.header_container
+      a(href="#").logo
+        +image('logo.png', 'logo_img')
+        .logo_title BRAN
+          span d
+      .search
+        button.button.button_browse Browse
+        input.search_input(placeholder="Search for Item...")
+        button.button.button_search
+          i(class="fa fa-search")
+      .cart
+        +image('cart.png', 'cart_img')
+        .cart_ellipse 2
+      .authorization
+        button.button.button_account My Account
+  .header_bottom
+    nav.nav
+      ul.nav_list
+        li.nav_item
+          a(href="/#" class="nav_link") Home
+        li.nav_item
+          a(href="/#" class="nav_link") Man
+        li.nav_item
+          a(href="/#" class="nav_link") Women
+        li.nav_item
+          a(href="/#" class="nav_link") Kids
+        li.nav_item
+          a(href="/#" class="nav_link") Accoseriese
+        li.nav_item
+          a(href="/#" class="nav_link") Featured
+        li.nav_item
+          a(href="/#" class="nav_link") Hot Deals
+

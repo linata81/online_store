@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "lato-regular";
+  src: url('/assets/fonts/lato-regular.woff') format('woff'), 
+  url('/assets/fonts/lato-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "lato-bold";
+  src: url('/assets/fonts/lato-bold.woff') format('woff'), 
+  url('/assets/fonts/lato-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "lato-light";
+  src: url('/assets/fonts/lato-light.woff') format('woff'), 
+  url('/assets/fonts/lato-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "lato-italic";
+  src: url('/assets/fonts/lato-italic.woff') format('woff'), 
+  url('/assets/fonts/lato-italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "lato-black";
+  src: url('/assets/fonts/lato-black.woff') format('woff'), 
+  url('/assets/fonts/lato-black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

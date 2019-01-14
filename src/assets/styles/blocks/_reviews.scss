@@ -1,0 +1,94 @@
+.reviews {
+  height: 440px;
+  background-image:
+    linear-gradient(to top, rgba(242,242,242,0.5), rgba(242,242,242,0.5)),
+    url('/assets/img/subscribe.png');
+  background-repeat: no-repeat;
+  // background-position: 0% 18%; для1200
+  background-position: 0% 25%;
+  background-size: cover;
+}
+.reviews_container {
+  display: flex;
+  height: 100%;
+  padding-top: 110px;
+  position: relative;
+}
+.reviews_comment {
+  flex: 1;
+  border-right: 1px solid #e3e3e3;
+  display: flex;
+}
+.customer {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+}
+.comment_content {
+  padding-left: 30px;
+  padding-right: 70px;
+}
+.comment_content_text {
+  font-family: "lato-italic";
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.6;
+}
+.comment_content_signature  {
+  padding-top: 10px;
+}
+.signature_author {
+  font-family: "lato-bold";
+  font-size: 16px;
+  color: $red;
+}
+.signature_from {
+  font-family: "lato-light";
+  font-size: 12px;
+}
+.reviews_btns {
+  position: absolute;
+  top: 280px;
+  left: 146px;
+  display: flex;
+}
+.reviews_btn {
+  width: 38px;
+  border-bottom: 4px solid #d6d6d6;
+  margin-right: 13px;
+  cursor: pointer;
+}
+.reviews_btn_active {
+  border-bottom: 4px solid $red;
+}
+.reviews_subscribe {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe_title {
+  margin-top: 28px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.subscribe_subtitle {
+  text-transform: uppercase;
+}
+.subscribe_form {
+  margin-top: 35px;
+}
+.subscribe_input {
+  width: 280px;
+  padding: 17px 30px;
+  // background: #e1e1e1;
+  border: none;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  outline: none;
+  &::placeholder {
+  color: #616162;
+  }
+  box-shadow: inset 0 0 0 50px #e1e1e1 !important; //чтобы желтым не подсвечивало цвет фона
+  -webkit-text-fill-color: #616162 !important; /* цвет текста */
+}

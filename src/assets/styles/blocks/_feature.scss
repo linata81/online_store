@@ -1,0 +1,54 @@
+.feature_container {
+  display: flex;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.feature_img {
+  height: 530px;
+}
+.snow_img {
+  height: 100%;
+}
+.feature_title {
+  font-family: "lato-bold";
+  font-size: 54px;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 125px;
+  left: 70px;
+}
+.colortext {
+  color: $red;
+}
+.feature_boxes {
+  margin: 0;
+  padding: 0 30px;
+  background: #222224;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.feature_title_category {
+  font-size: 32px;
+  line-height: 0.75;
+}
+.feature_box_desc {
+  padding-left: 28px;
+  color: white;
+}
+.feature_box {
+  display: flex;
+  margin-top: 45px;
+}
+.box_desc_title {
+  font-family: "lato-bold";
+  font-size: 20px;
+}
+.box_desc_content{
+  font-family: "lato-light";
+  font-size: 14px;
+  padding-top: 12px;
+  line-height: 1.9;
+}
