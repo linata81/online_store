@@ -7,6 +7,7 @@
   // background-position: 0% 18%; для1200
   background-position: 0% 25%;
   background-size: cover;
+  margin-bottom: 100px;
 }
 .reviews_container {
   display: flex;
@@ -77,11 +78,13 @@
 }
 .subscribe_form {
   margin-top: 35px;
+  display: flex;
 }
 .subscribe_input {
-  width: 280px;
+  width: 282px;
+  margin: 0;
   padding: 17px 30px;
-  // background: #e1e1e1;
+  box-sizing: border-box;
   border: none;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;

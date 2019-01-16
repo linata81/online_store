@@ -86,7 +86,12 @@
   padding: 18px 43px 18px 25px;
   position: relative;
 }
-
-
-
-
+.button_subscribe {
+  font-family: inherit;
+  background: $red;
+  color: white;
+  border: none;
+  padding: 17px 22px;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
