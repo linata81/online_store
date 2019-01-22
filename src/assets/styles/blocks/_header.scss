@@ -76,5 +76,13 @@
   padding: 0;
 }
 .nav_item {
-  margin: 15px 23px 19px 23px;
+  margin: 0 13px;
+}
+.nav_link {
+  display: block;
+  padding: 15px 10px 16px 10px;
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid #ef5b70;
+  }
 }
