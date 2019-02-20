@@ -1,0 +1,9 @@
+mixin nav(className,items,varName)
+  nav(class=`${className}`)
+    ul(class=`${className}_list`)
+      each item in items
+        li(class=`${className}_item`)
+          if item[0]=== varName
+            a(class=`${className}_link`, class=`${className}-active` href=`${item[1]}`)=item[0]
+          else
+            a(class=`${className}_link` href=`${item[1]}`)=item[0]

@@ -1,0 +1,31 @@
+.sidebar {
+  width: 292px;
+  margin-top: 43px;
+}
+.category {
+  list-style: none;
+  font-family: "lato-bold";
+  text-transform: uppercase;
+  padding: 0;
+  padding-right: 50px;
+}
+.category_list {
+  border-left: 5px solid $red;
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px 12px;
+  position: relative;
+  &::before {
+    content: ''; 
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    border: 5px solid transparent;
+    border-top: 5px solid #838383;
+  }
+}
+.category_items {
+  font-family: "lato-regular";
+  text-transform: capitalize;
+  list-style: none;
+  padding: 0;
+}

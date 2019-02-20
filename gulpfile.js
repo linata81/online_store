@@ -42,11 +42,11 @@ const paths = {
     fonts: {
       src: './src/assets/fonts/**/*.*',
       dest: './dist/assets/fonts/'
-  },
+    },
     svg: {
       src: './src/assets/img/**/*.svg',
       dest: './dist/assets/img/'
-  }
+    }
 }
 
 // слежка

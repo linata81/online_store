@@ -75,25 +75,3 @@ block content
             .feature_box_desc
               .box_desc_title #{item[1]}
               .box_desc_content #{item[2]}
-
-  section.reviews
-    .container.reviews_container
-      .reviews_comment
-        .comment_img
-          +image('customer.png','customer')
-        .comment_content
-          .comment_content_text “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-          .comment_content_signature 
-            .signature_author Bin Burhan
-            .signature_from Dhaka, Bd
-      .reviews_btns
-        .reviews_btn
-        .reviews_btn.reviews_btn_active
-        .reviews_btn
-      .reviews_subscribe
-        .subscribe_title Subscribe
-        .subscribe_subtitle FOR OUR NEWLETTER AND PROMOTION
-        form.subscribe_form(action="#")
-          input(type="email" class="subscribe_input" name="email" placeholder="Enter Your Email")
-          button(type="submit" class="button button_subscribe") Subscribe
-

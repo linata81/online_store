@@ -59,17 +59,20 @@
   top: 98px;
   left:50%;
   transform: translateX(-50%);
-  padding: 10px 13px 10px 43px;
+  width: 123px;
+  height: 39px;
+  padding-left: 35px;
   background: transparent;
   color: white;
   font-family: "lato-bold";
   font-size: 13px;
+  border-radius: 2px;
   &::before {
     display: block;
     content: "";
     position: absolute;
     top: 50%;
-    left: 11px;
+    left: 10px;
     transform: translateY(-50%);
     background-image:url('/assets/img/cart2.svg');
     background-size: cover;
@@ -104,3 +107,33 @@
     background: #f05469;
   }
 }
+.button_photo{
+  display: block;
+  background: transparent;
+  border: 1px solid white;
+  flex: 1;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-size: 16px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.pagination_button {
+  box-sizing: border-box;
+  border: 1px solid $red;
+  border-radius: 2px;
+  padding: 0 46px;
+  margin: 0;
+  background: transparent;
+  font-size: 16px;
+  color: $red;
+  &:hover {
+    background: $red;
+    color: white;
+  }
+}
+
+

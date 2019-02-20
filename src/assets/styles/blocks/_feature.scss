@@ -35,7 +35,6 @@
   line-height: 0.75;
 }
 .feature_box_desc {
-  padding-left: 28px;
   color: white;
 }
 .feature_box {
@@ -45,10 +44,43 @@
 .box_desc_title {
   font-family: "lato-bold";
   font-size: 20px;
+  padding-left: 28px;
 }
 .box_desc_content{
   font-family: "lato-light";
   font-size: 14px;
   padding-top: 12px;
   line-height: 1.9;
+  padding-left: 28px;
+}
+
+/* reduced_feature*/
+
+.reduced_feature {
+  height: 340px;
+  background: #222224;
+  margin-top: 110px;
+}
+.reduced_feature_boxes {
+  display: flex;
+  padding: 0;
+  padding-top: 90px;
+  margin: 0;
+}
+.reduced_feature_box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reduced_feature_box_img {
+  height: 60px;
+}
+.box_desc_title__center {
+  text-align: center;
+  padding: 0;
+}
+.box_desc_content__padding {
+  padding-left: 40px;
+  padding-right: 39px;
 }

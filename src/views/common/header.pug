@@ -1,3 +1,14 @@
+-
+ var headerNav = [
+               ['Home', 'index.html'],
+               ['Man', 'man.html'],
+               ['Women', '#'],
+               ['Kids', '#'],
+               ['Accoseriese', '#'],
+               ['Featured', '#'],
+               ['Hot Deals', '#']
+              ]
+
 header.header
   .header_top
     .container.header_container
@@ -16,20 +27,9 @@ header.header
       .authorization
         button.button.button_account My Account
   .header_bottom
-    nav.nav
-      ul.nav_list
-        li.nav_item
-          a(href="/index.html" class="nav_link") Home
-        li.nav_item
-          a(href="/product.html" class="nav_link") Man
-        li.nav_item
-          a(href="/#" class="nav_link") Women
-        li.nav_item
-          a(href="/#" class="nav_link") Kids
-        li.nav_item
-          a(href="/#" class="nav_link") Accoseriese
-        li.nav_item
-          a(href="/#" class="nav_link") Featured
-        li.nav_item
-          a(href="/#" class="nav_link") Hot Deals
+    include ../common/nav.pug
+    +nav('nav', headerNav, current)
+
+
+
 

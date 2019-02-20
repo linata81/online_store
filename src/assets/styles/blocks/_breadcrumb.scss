@@ -1,0 +1,25 @@
+.breadcrumb {
+  background: #f8f3f4;
+}
+.breadcrumb_container {
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumb_left,.breadcrumb_right {
+  margin: auto 0;
+  text-transform: uppercase;
+}
+.breadcrumb_left {
+  font-family: "lato-black";
+  font-size: 24px;
+  color: $red;
+}
+.breadcrumb_right {
+  font-family: "lato-light";
+  color: #636363;
+  span {
+    font-family: "lato-bold";
+    color: $red;
+  }
+}

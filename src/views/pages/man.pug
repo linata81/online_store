@@ -1,0 +1,146 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'man'
+  - var current = title
+  -
+    var category = ['Accessories',
+                    'Bags',
+                    'Denim',
+                    'Hoodies & Sweatshirts',
+                    'Jackets & Coats',
+                    'Pants',
+                    'Polos',
+                    'Shirts',
+                    'Shoes',
+                    'Shorts',
+                    'Sweaters & Knits',
+                    'T-Shirts',
+                    'Tanks']
+  -
+    var BRAND = ['Shorts',
+                 'Sweaters & Knits',
+                 'T-Shirts',
+                 'Tanks']
+  -
+    var designer = ['Pants',
+                    'Polos',
+                    'Shirts',
+                    'Shoes']
+  - var sizes = ['xxs','xs','s','m','l','xl','xxl']
+  -
+    var products = [
+                   ['men1','Mango  People  T-shirt', '52'],
+                   ['men2','Mango  People  T-shirt', '25'],
+                   ['3','Mango  People  T-shirt', '30'],
+                   ['men4','Mango  People  T-shirt', '40'],
+                   ['8','Mango  People  T-shirt', '52'],
+                   ['men6','Mango  People  T-shirt', '25'],
+                   ['6','Mango  People  T-shirt', '30'],
+                   ['men8','Mango  People  T-shirt', '40'],
+                   ['men9','Mango  People  T-shirt', '40']
+                   ]
+
+  - var pagination = ['1','2','3','4','5','6','...','20']
+  -
+    var feature = [
+                   ['car','Free Delivery', 'Worldwide delivery on all. Authorit tively morph next-generation innovtion with extensive models.'],
+                   ['round','Sales & discounts', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'],
+                   ['crown','Quality assurance', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'],
+                   ]
+
+
+block content
+  section.breadcrumb
+    .container.breadcrumb_container
+      .breadcrumb_left New Arrivals 
+      .breadcrumb_right Home / Men / 
+        span New Arrivals
+
+  section.main_content
+    .container.main_content_container
+      .sidebar
+        ul.category
+          li.category_list Category
+          ul.category_items
+            each item in category
+              li.category_item #{item}
+
+          li.category_list BRAND
+          ul.category_items
+            each item in BRAND
+              li.category_item #{item}
+
+          li.category_list dESIGNER
+          ul.category_items
+            each item in designer
+              li.category_item #{item}
+
+      .page_content
+        form.filters
+          .top_filter
+            .filter
+              .filter_title Trending Now
+            .filter
+              .filter_title size
+              .filter_checkbox 
+                each size in sizes
+                  .checkbox_block
+                    input(type="checkbox" name="size" value=`${size}` id=`${size}` class="checkbox_input")
+                    label(for=`${size}` class="checkbox__label") #{size}
+            .filter
+              .filter_title price
+          .bottom_filter
+            .sort 
+              .sort_title Sort By
+              select(name="sortBy" class="select")
+                option(value="name") Name
+                option(value="name") Name
+                option(value="name") Name
+            .sort 
+              .sort_title Show
+              select(name="Show" class="select select_2")
+                option(value="09") 09
+                option(value="12") 12
+                option(value="15") 15
+
+        ul.products_items
+          each item in products
+            li.products_item
+              a(href="#" class="products_item_img" style=`background-image:url('/assets/img/products/${item[0]}.png')`)
+              a(href="#" class="products_item_desc") #{item[1]}
+              .products_item_price $#{item[2]}
+              button.button.products_items_button Add to Cart
+              .button_wrap
+                button.button_photo.button_photo-size
+                  +image('arrows.svg', 'arrows_img')
+                button.button_photo.button_photo-liked
+                  i(class="fa fa-heart-o" aria-hidden="true")
+
+        .pagination
+          ul.pagination_list
+            li.pagination_item
+              a(href="#" class="arrows prev")
+                i(class="fa fa-chevron-left" aria-hidden="true")
+            each item in pagination
+              li.pagination_item
+                a(href="#" class="pagination_link") #{item}
+            li.pagination_item
+              a(href="#" class="arrows next")
+                i(class="fa fa-chevron-right" aria-hidden="true")
+
+          button.button.pagination_button View All
+
+  section.reduced_feature
+    .container
+      ul.reduced_feature_boxes
+        each item in feature
+          li.reduced_feature_box
+            .reduced_feature_box_img
+              object(type="image/svg+xml" data=`assets/img/${item[0]}.svg` width="51")
+            .feature_box_desc
+              .box_desc_title.box_desc_title__center #{item[1]}
+              .box_desc_content.box_desc_content__padding #{item[2]}
+
+//- block scripts
+//-     script(src='assets/scripts/works.bundle.js')

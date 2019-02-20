@@ -12,13 +12,13 @@
 .reviews_container {
   display: flex;
   height: 100%;
-  padding-top: 110px;
   position: relative;
 }
 .reviews_comment {
   flex: 1;
   border-right: 1px solid #e3e3e3;
   display: flex;
+  padding-top: 110px;
 }
 .customer {
   width: 86px;
@@ -67,6 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 110px;
 }
 .subscribe_title {
   margin-top: 28px;
