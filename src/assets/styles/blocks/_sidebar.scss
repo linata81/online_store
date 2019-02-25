@@ -12,8 +12,10 @@
 .category_list {
   border-left: 5px solid $red;
   border-bottom: 1px solid #ebebeb;
+  margin-bottom: 18px;
   padding: 8px 12px;
   position: relative;
+  cursor: pointer;
   &::before {
     content: ''; 
     position: absolute;
@@ -28,4 +30,13 @@
   text-transform: capitalize;
   list-style: none;
   padding: 0;
+  padding-bottom: 22px;
+}
+.category_point {
+  margin-bottom: 15px;
+  cursor: pointer;
+  &:hover {
+    color: #222;
+  }
+  display: none;
 }

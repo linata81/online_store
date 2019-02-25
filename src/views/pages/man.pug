@@ -41,7 +41,7 @@ block variables
                    ['men9','Mango  People  T-shirt', '40']
                    ]
 
-  - var pagination = ['1','2','3','4','5','6','...','20']
+  - var pagination = ['1','2','3','4','5','6.....','20']
   -
     var feature = [
                    ['car','Free Delivery', 'Worldwide delivery on all. Authorit tively morph next-generation innovtion with extensive models.'],
@@ -64,17 +64,17 @@ block content
           li.category_list Category
           ul.category_items
             each item in category
-              li.category_item #{item}
+              li.category_point #{item}
 
           li.category_list BRAND
           ul.category_items
             each item in BRAND
-              li.category_item #{item}
+              li.category_point #{item}
 
           li.category_list dESIGNER
           ul.category_items
             each item in designer
-              li.category_item #{item}
+              li.category_point #{item}
 
       .page_content
         form.filters

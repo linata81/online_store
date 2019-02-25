@@ -136,9 +136,9 @@
   border-radius: 2px;
 }
 .pagination_item {
-  margin-right: 17px;
-  &:last-child {
-    margin-right: 0;
+  margin-left: 17px;
+  &:first-child, &:nth-child(8) {
+    margin-left: 0;
   }
 }
 .pagination_link,.arrows {
