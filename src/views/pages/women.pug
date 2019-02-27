@@ -1,0 +1,20 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'women'
+  - var current = title
+
+block content
+  section.breadcrumb
+    .container.breadcrumb_container
+      .breadcrumb_left New Arrivals 
+      .breadcrumb_right Home / Men / 
+        span New Arrivals
+
+  section.product_slider
+    .product_slider_image
+      +image('products/women1.png', 'slide_img')
+    .product_slider_btn.product_slider_prev
+      i(class="fa fa-angle-left" aria-hidden="true")
+    .product_slider_btn.product_slider_next
+      i(class="fa fa-angle-left" aria-hidden="true")

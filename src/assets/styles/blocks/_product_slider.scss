@@ -1,0 +1,33 @@
+.product_slider {
+  background: #f7f7f7;
+  border: 1px solid transparent;
+  position: relative;
+}
+.product_slider_image {
+  width: 597px;
+  height: 724px;
+  margin: 10px auto 40px auto;
+  border: 1px solid red;
+}
+.product_slider_btn {
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  background: #d8d8d8;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover {
+    background: #bebdbd;
+  }
+}
+.product_slider_next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.fa-angle-left {
+  margin-top: 10px;
+}
