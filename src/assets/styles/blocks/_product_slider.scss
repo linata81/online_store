@@ -1,13 +1,14 @@
 .product_slider {
   background: #f7f7f7;
-  border: 1px solid transparent;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
   position: relative;
 }
 .product_slider_image {
   width: 597px;
   height: 724px;
   margin: 10px auto 40px auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .product_slider_btn {
   width: 47px;

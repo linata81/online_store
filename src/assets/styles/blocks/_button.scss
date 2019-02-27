@@ -121,7 +121,7 @@
     margin-right: 0;
   }
 }
-.pagination_button {
+.white_button {
   box-sizing: border-box;
   border: 1px solid $red;
   border-radius: 2px;
@@ -135,5 +135,32 @@
     color: white;
   }
 }
-
+.product_description_button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  width: 537px;
+  height: 55px;
+  font-family: "lato-bold";
+  font-size: 16px;
+  color: $red;
+  background: white;
+  border: 1px solid $red;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 247px;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 207px;
+    transform: translateY(-50%);
+    background-image:url('/assets/img/redCart.svg');
+    background-size: cover;
+    width: 26px;
+    height: 24px;
+  }
+}
 
