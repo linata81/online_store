@@ -3,6 +3,13 @@ extends ../main.layout.pug
 block variables
   - var title = 'Women'
   - var current = title
+  -
+    var Recommendation = [
+                   ['women2','BLAZE LEGGINGS', '52'],
+                   ['women3','ALEXA SWEATER', '25'],
+                   ['women4','AGNES top', '30'],
+                   ['women5','SYLVA SWEATER', '40']
+                   ]
 
 block content
   section.breadcrumb
@@ -47,3 +54,20 @@ block content
         .product_description_filter QUANTITY
           input(type="text" class="product_description_input")
       button.product_description_button Add to Cart
+
+  section.recommendations
+    .container
+      .recommendations_title you may like also
+      ul.products_items
+        each item in Recommendation
+          li.products_item
+            a(href="#" class="products_item_img" style=`background-image:url('/assets/img/products/${item[0]}.png')`)
+            a(href="#" class="products_item_desc") #{item[1]}
+            .products_item_price $#{item[2]}
+            button.button.products_items_button Add to Cart
+            .button_wrap
+              button.button_photo.button_photo-size
+                +image('arrows.svg', 'arrows_img')
+              button.button_photo.button_photo-liked
+                i(class="fa fa-heart-o" aria-hidden="true")
+
