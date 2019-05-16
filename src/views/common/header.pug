@@ -8,6 +8,24 @@
                ['Featured', '#'],
                ['Hot Deals', '#']
               ]
+-
+ var dropDown_women = ['Dresses',
+                       'Tops',
+                       'Sweaters/Knits',
+                       'Jackets/Coats',
+                       'Blazers',
+                       'Denim',
+                       'Leggings/Pants',
+                       'Skirts/Shorts',
+                       'Accessories']
+-
+ var dropDown_men = ['Tees/Tank tops',
+                     'Shirts/Polos',
+                     'Sweaters',
+                     'Sweatshirts/Hoodies',
+                     'Blazers',
+                     'Jackets/vests']
+
 
 header.header
   .header_top
@@ -18,6 +36,20 @@ header.header
           span d
       .search
         button.button.button_browse Browse
+          .dropDown.browse_dropDown
+            ul.dropDown_list 
+              .dropDown_list_title
+                a.dropDown_link(href="women.html") Women
+              each item in dropDown_women
+                li.dropDown_item 
+                  a.dropDown_link #{item}
+            ul.dropDown_list 
+              .dropDown_list_title
+                a.dropDown_link(href="man.html") Men
+              each item in dropDown_men
+                li.dropDown_item
+                  a.dropDown_link #{item}
+
         input.search_input(placeholder="Search for Item...")
         button.button.button_search
           i(class="fa fa-search")

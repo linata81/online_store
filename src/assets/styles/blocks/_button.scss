@@ -32,6 +32,10 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #a4a4a4;
+  background: transparent;
+  &:hover {
+    background: #f8f8f8;
+  }
 }
 .button_account {
   margin-left: 25px;
